@@ -18,6 +18,12 @@ La comprovació del funcionament de l'API es fa gràcies a l'eina Postman.
 1. Clonar el repositorio de Github
 git clone https://github.com/g-lemoing/S04T02N02.git
 2. Abrir el IDE e importar el proyecto desde el repositorio local desde File > Open.
+3. Abrir el MySQLWorkbench, instalarlo previamente si necesario (https://dev.mysql.com/downloads/), y crear una instancia en localhost
+4. En la aplicación, editar el fichero application.properties para adecuar los valores de conexión a la base de datos:
+spring.datasource.url=jdbc:mysql://localhost:[your_port_number]/db_grocershop?useSSL=false
+spring.datasource.username=[your_username]
+spring.datasource.password=[your_password]
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 ## Ejecución:
 Localizar la clase Main y ejecutar S04T02N02Application.
